@@ -13,7 +13,7 @@
     font-weight: bold;
     z-index: 99;
     white-space: nowrap;
-    font-family: 'Holtwood One SC', serif;
+     font-family: 'Holtwood One SC', serif;
 }
 
 .navigation a {
@@ -26,13 +26,13 @@
 }
 
 .desc-normal {
-    color: rgb(220, 226, 61);;
+    color:  rgb(41, 192, 41);
 }
 
 .desc-correct {
-    color: rgb(41, 192, 41);
+    color: rgba(31, 10, 10, 0.66);
 }
 
 .desc-incorrect {
-    color: rgba(31, 10, 10, 0.66);
+    color: rgba(14, 1, 1, 0.66);
 }
