@@ -1,5 +1,5 @@
 import React, {Component}from 'react';
-import "App.css";
+import "./App.css";
 import images from "./images.json";
 import Card from "./components/Card";
 import Nav from "./components/Nav";
@@ -17,17 +17,19 @@ class App extends Component {
     unSelectedImages:images
   }
 
-  randomImage = image =>{
-    for(let i = image.length -1; i >0; --i) {
-      let x = Math.floor(Math.random() * (i + 1));
-    [image[i]], [image[x]] = [image[x]], [image[i]];
+
+  randomImage = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
-  }
+}
 
   selectImage = name => {
     const soccerPlayer = this.state.unSelectedImages.find(item => item.name === name);
 
     if (soccerPlayer === undefined){
+      //if the user makes incorrect guess.
       this.setState({
         message:"Incorrect Guess!",
         topScore:(this.state.currentScore > this.state.topScore) ? this.state.currentScore : this.state.topScore,
@@ -48,17 +50,18 @@ class App extends Component {
       });
     }
     this.randomImage(images);
-  }
+  };
 
   render() {
     return (
       <Wrapper>
+       
         <Nav 
         message = {this.state.message}
         topScore = {this.state.topScore}
         currentScore = {this.state.currentScore}
         />
-        <Title />
+        <Title /> 
         {
           this.state.images.map(soccerPlayers => (
             <Card 
@@ -69,6 +72,7 @@ class App extends Component {
             />
           ))
         }
+     
       </Wrapper>
     );
   }

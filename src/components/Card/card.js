@@ -1,7 +1,7 @@
 import React from "react";
-import "./card.css";
+import "./Card.css";
 
-const Card = props => {
+const Card = props =>(
     <div className="card">
         <div className = "image-container">
             <a onClick = {() => props.selectImage(props.name)}
@@ -12,6 +12,6 @@ const Card = props => {
             </a>
         </div>
     </div>
-}
+)
 
 export default Card;

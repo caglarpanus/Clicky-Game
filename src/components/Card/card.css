@@ -16,7 +16,7 @@
     overflow: hidden;
     text-align: center;
 }
-.card > .img-container img {
+.card > .image-container img {
     margin-top: 10px;
     width: 100%;
     height: 140px;
