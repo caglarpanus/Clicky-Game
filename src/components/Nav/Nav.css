@@ -13,13 +13,14 @@
     font-weight: bold;
     z-index: 99;
     white-space: nowrap;
+    font-family: 'Holtwood One SC', serif;
 }
 
 .navigation a {
     color: rgb(220, 226, 61);
 }
 
-.navigation a:hover {
+.nav-pills a:hover {
     color: rgb(220, 226, 61);;
     background-color: #5133a4 !important;
 }
