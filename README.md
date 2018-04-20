@@ -7,7 +7,9 @@ A memory game with React.The goal here was to break up the application's UI into
 
 ## A View From The Application
 
-<img src="public/assets/images/readme.gif">
+<p><strong><a href= "https://guarded-temple-44149.herokuapp.com/">Click Me To Try The Application</p>
+
+<img src="public/assets/images/readme.gif"> 
 
 ## Technologies Used
 
