@@ -3,8 +3,8 @@ import "./Nav.css";
 
 const Nav = props => (
     <div>
-        <ul className = " nav navigation">
-            <li><a href="/">Clicky Game</a></li>
+        <ul className = "nav navigation">
+            <li><a href="/">Soccer Clicky Game</a></li>
             <li className={props.message.indexOf("incorrect") !== -1 ? 
             
                 "des-incorrect" : 
