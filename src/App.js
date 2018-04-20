@@ -24,8 +24,8 @@ class App extends Component {
     }
   }
 
-  selectImage = image => {
-    const soccerPlayer = this.state.unSelectedImages.find(item => item.image === image);
+  selectImage = name => {
+    const soccerPlayer = this.state.unSelectedImages.find(item => item.name === name);
 
     if (soccerPlayer === undefined){
       this.setState({
@@ -34,23 +34,44 @@ class App extends Component {
         currentScore:0,
         images:images,
         unSelectedImages:images
-      })
+      });
     }
+    else{
+      //if the the guess is correct, select a new image.
+      const newImage = this.state.unSelectedImages.filter(item => item.name !== name);
+
+      this.setState({
+        message:"Correct Guess!",
+        currentScore:this.state.currentScore+1,
+        images:images,
+        unSelectedImages:newImage
+      });
+    }
+    this.randomImage(images);
   }
 
 
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Wrapper>
+        <Nav 
+        message = {this.state.message}
+        topScore = {this.state.topScore}
+        currentScore = {this.state.currentScore}
+        />
+        <Title />
+        {
+          this.state.images.map(soccerPlayers => (
+            <Card 
+              name ={soccerPlayers.name}
+              image = {soccerPlayers.image}
+              selectImage = {this.selectImage}
+              currentScore = {this.state.currentScore}
+            />
+          ))
+        }
+      </Wrapper>
     );
   }
 }

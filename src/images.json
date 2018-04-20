@@ -1,62 +1,59 @@
 [
     {
-      "id": 1,
-      "image": "./assets/images/aguero.jpg",
-      "clicked": false
+      "name": "aguero",
+      "image": "./assets/images/aguero.jpg"
     },
     {
-      "id": 2,
-      "image": "./assets/images/alves.jpg",
-      "clicked": false
+      "name": "alves",
+      "image": "./assets/images/alves.jpg"
     },
     {
-      "id": 3,
-      "image": "./assets/images/buffon.jpg",
-      "clicked": false
+      "name": "buffon",
+      "image": "./assets/images/buffon.jpg"
     },
     {
-      "id": 4,
-      "image": "./assets/images/fernando.jpg",
-      "clicked": false
+      "name": "fernando",
+      "image": "./assets/images/fernando.jpg"
+
     },
     {
-      "id": 5,
-      "image": "./assets/images/hazard.jpg",
-      "clicked": false
+      "name": "hazard",
+      "image": "./assets/images/hazard.jpg"
+
     },
     {
-      "id": 6,
-      "image": "./assets/images/kevin.jpg",
-      "clicked": false
+      "name": "kevin",
+      "image": "./assets/images/kevin.jpg"
+
     },
     {
-      "id": 7,
-      "image": "./assets/images/lewa.jpg",
-      "clicked": false
+      "name": "lewa",
+      "image": "./assets/images/lewa.jpg"
+
     },
     {
-      "id": 8,
-      "image": "./assets/images/messi.jpg",
-      "clicked": false
+      "name": "messi",
+      "image": "./assets/images/messi.jpg"
+      
     },
     {
-      "id": 9,
-      "image": "./assets/images/neymar.jpg",
-      "clicked": false
+      "name": "neymar",
+      "image": "./assets/images/neymar.jpg"
+    
     },
     {
-      "id": 10,
-      "image": "./assets/images/pogba.jpg",
-      "clicked": false
+      "name": "pogba",
+      "image": "./assets/images/pogba.jpg"
+  
     },
     {
-      "id": 11,
-      "image": "./assets/images/ronaldo.jpg",
-      "clicked": false
+      "name": "ronaldo",
+      "image": "./assets/images/ronaldo.jpg"
+
     },
     {
-      "id": 12,
-      "image": "./assets/images/zlatan.jpg",
-      "clicked": false
+      "name": "zlatan",
+      "image": "./assets/images/zlatan.jpg"
+
     }
   ]
