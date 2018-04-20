@@ -50,8 +50,6 @@ class App extends Component {
     this.randomImage(images);
   }
 
-
-
   render() {
     return (
       <Wrapper>
