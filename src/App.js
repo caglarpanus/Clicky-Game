@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component}from 'react';
+import "App.css";
+import images from "./images.json";
+import Card from "./components/Card";
+import Nav from "./components/Nav";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+
 
 class App extends Component {
   render() {
